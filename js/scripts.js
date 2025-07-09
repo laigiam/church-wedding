@@ -214,7 +214,7 @@ $(document).ready(function () {
         var data = $(this).serialize();
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-            $.post('https://script.google.com/macros/s/AKfycbyZIuibGZvvOgMAPmGdJFpfW3FCa2DOE6h-RCbTy5oEE-By4v2cSdg7zViAIG_UzacC/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbzcsXb37BRyiP1s62ys92miMUCXLKvzho4qW6BiT4pMcHQhS13C05y52Lz3eVhGm3z86g/exec', data)
                 .done(function (data) {
                     console.log(data);
                     alert(JSON.stringify(data));
@@ -240,7 +240,7 @@ $(document).ready(function () {
 // Google map
 function initMap() {
   // CONRAD map
-  const conrad = { lat: 1.2936, lng: 103.8572 };
+  const conrad = { lat: 1.3519369767936351, lng: 103.9605495535742};
   const conradMap = document.getElementById("map-canvas");
   if (conradMap) {
     const map1 = new google.maps.Map(conradMap, {
@@ -250,7 +250,7 @@ function initMap() {
     new google.maps.Marker({
       position: conrad,
       map: map1,
-      title: "Conrad Singapore Marina Bay",
+      title: "Living Hope Methodist Church",
     });
   }
 
@@ -275,7 +275,7 @@ function initMap() {
 
 
 function initBBSRMap() {
-    var la_fiesta = {lat: 1.293605582979568, lng: 103.85890804154393};
+    var la_fiesta = {lat: 1.3519369767936351, lng: 103.9605495535742};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: la_fiesta,
