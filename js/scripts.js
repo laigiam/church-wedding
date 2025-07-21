@@ -240,7 +240,7 @@ $(document).ready(function () {
 // Google map
 function initMap() {
   // CONRAD map
-  const conrad = { lat: 1.3519369767936351, lng: 103.9605495535742};
+  const conrad = { lat: 1.3519126996513025, lng: 103.96053388185229 };
   const conradMap = document.getElementById("map-canvas");
   if (conradMap) {
     const map1 = new google.maps.Map(conradMap, {
@@ -250,7 +250,7 @@ function initMap() {
     new google.maps.Marker({
       position: conrad,
       map: map1,
-      title: "Living Hope Methodist Church",
+      title: "Conrad Singapore Marina Bay",
     });
   }
 
@@ -275,7 +275,7 @@ function initMap() {
 
 
 function initBBSRMap() {
-    var la_fiesta = {lat: 1.3519369767936351, lng: 103.9605495535742};
+    var la_fiesta = {lat: 1.293605582979568, lng: 103.85890804154393};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: la_fiesta,
