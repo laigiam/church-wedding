@@ -1663,3 +1663,7 @@ ul.modal-list li {
   margin-bottom: -12px; /* Reduce this value to bring the text closer */
 }
 
+.event-seating-note strong {
+  color: rgba(28, 54, 83, 0.85); /* darker than normal text */
+  font-weight: 600;
+}
